@@ -1,0 +1,285 @@
+$gold: #C8A35F;
+$dark: #2F343A;
+$bold: 700;
+$darkgrey: #393F47;
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    background: $dark;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: none;
+        color: $gold;
+    }
+}
+
+hr {
+    margin-left: 0px;
+    margin-bottom: 40px;
+    width: 90px;
+    border-top: 6px solid $gold;
+}
+
+.bg-rect {
+    top: 0px;
+    position: absolute;
+    width: 410px;
+    height: 100%;
+    left: 50%;
+    margin-left: -205px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.header {
+    &__top-line {
+        background: $gold;
+        padding: 16px 0px;
+
+        a {
+            margin-right: 10px;
+        }
+    }
+
+    &__email {
+        text-transform: lowercase;
+    }
+
+    &__lang-item {
+        opacity: .5;
+
+        &--active {
+            opacity: 1;
+        }
+    }
+
+    &__first-line {
+        font-size: 14px;
+        padding: 17px 0px;
+    }
+
+    logo {
+        padding-right: 30px;
+        border-right: 1px solid #F2F2F2;
+        margin: 10px 30px 10px 0;
+    }
+
+    &__marker {
+        margin-right: 10px;
+    }
+
+    &__offices {
+        a {
+            text-transform: none;
+        }
+    }
+
+    &__nav {
+        width: 412px;
+        margin: 10px 0px;
+    }
+}
+
+.first-screen {
+    background: url(../images/first-screen/bg.jpg) no-repeat center;
+    padding-top: 155px;
+    padding-bottom: 50px;
+    height: 620px;
+
+    &__text {
+        margin: 0px auto 133px auto;
+        padding: 45px 0px;
+        border: 1px solid $gold;
+
+        p {
+            letter-spacing: 0em;
+            line-height: 1.58em;
+            max-width: 715px;
+        }
+    }
+}
+
+.services {
+    background: $darkgrey;
+    padding-top: 120px;
+    padding-bottom: 129px;
+    margin-bottom: 120px;
+
+    &__bg {
+        background: $dark;
+    }
+
+    p {
+        width: 320px;
+        line-height: 1.58em;
+        letter-spacing: 0em;
+        margin-bottom: 50px;
+    }
+
+    &__details {
+        padding: 17px 47px;
+        border: 1px solid $gold;
+        background: $gold;
+        transition: .5s ease;
+
+        &:hover {
+            background: $darkgrey;
+        }
+    }
+
+    &__next {}
+}
+
+.all-services {
+    margin-bottom: 120px;
+
+    .col-lg-3 {
+        padding: 0px;
+    }
+
+    &__item {
+        height: 180px;
+        text-align: center;
+        background: $darkgrey;
+        padding: 35px 0 36px;
+        border: 1px solid $dark;
+        transition: .5s ease;
+
+        img {
+            padding: 20px;
+        }
+    }
+
+    a {
+        height: 100%;
+        width: 100%;
+    }
+
+    a:hover &__elipse {
+        background: white;
+        background-image: url(../images/all-services/plane-black.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    a:hover img {
+        opacity: 0;
+    }
+
+    a:hover &__item {
+        background: $gold;
+    }
+
+    a:hover {
+        color: $darkgrey;
+    }
+
+
+    &__elipse {
+        background: $darkgrey;
+        width: 70px;
+        margin: 0px auto 20px auto;
+        border-radius: 50%;
+        background-image: url(../images/all-services/plane.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: .5s ease;
+    }
+}
+
+.about {
+
+    padding-top: 80px;
+    padding-bottom: 200px;
+
+    span {
+        font-size: 12px;
+    }
+
+    ul {
+        margin-bottom: 0px;
+        padding-left: 5px;
+    }
+
+    li {
+        overflow: hidden;
+        color: $dark;
+        background: white;
+        width: 200px;
+        height: 160px;
+        text-align: center;
+        list-style: none;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__li--last {
+        opacity: 0;
+    }
+
+    h1 {
+        margin-top: 23px;
+        margin-bottom: 0px;
+        line-height: 75px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    &__bg {
+        background: $darkgrey;
+        height: 482px;
+    }
+}
+
+.map {
+    height: 450px;
+    background-image: url(../images/map/maps.jpg);
+}
+
+.footer {
+    background: $gold;
+    padding-top: 60px;
+    padding-bottom: 55px;
+
+    logo {
+        border: 0px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .black {
+        color: black;
+    }
+}
